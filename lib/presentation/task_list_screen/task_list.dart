@@ -82,6 +82,7 @@ class TaskListScreen extends StatelessWidget {
                                   ),
                                 ),
                                 Checkbox(
+                                  activeColor: AppColors.primary,
                                   value: task.isDone,
                                   onChanged: (value) {
                                     task.isDone = value!;
@@ -109,7 +110,7 @@ class TaskListScreen extends StatelessWidget {
                                     width: 90,
                                     height: 26,
                                     decoration: BoxDecoration(
-                                      color: Colors.green,
+                                      color: AppColors.primary,
                                       borderRadius: BorderRadius.circular(18),
                                     ),
                                     child: Padding(
@@ -154,7 +155,7 @@ class TaskListScreen extends StatelessWidget {
                                       width: 90,
                                       height: 26,
                                       decoration: BoxDecoration(
-                                        color: Colors.green,
+                                        color: AppColors.primary,
                                         borderRadius: BorderRadius.circular(18),
                                       ),
                                       child: Row(
