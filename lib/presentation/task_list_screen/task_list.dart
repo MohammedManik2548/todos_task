@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../core/services/notification_service.dart';
@@ -22,7 +23,7 @@ class TaskListScreen extends StatelessWidget {
           itemCount: taskController.tasks.length,
           itemBuilder: (context, index) {
             final task = taskController.tasks[index];
-            DateTime selectedTime = DateTime.now().add(Duration(seconds: 10));
+            DateTime selectedTime = DateTime.now().add(Duration(minutes: 10));
             NotifyHelper.scheduledNotification(
               'Schedule Notification',
               'This is Schedule Notification',
@@ -72,9 +73,12 @@ class TaskListScreen extends StatelessWidget {
                               children: [
                                 Text(
                                   task.title??'',
-                                  style: const TextStyle(
+                                  style: TextStyle(
                                     fontSize: 18,
+                                    color: task.isDone?Colors.grey:Colors.black,
                                     fontWeight: FontWeight.bold,
+                                    decoration: task.isDone?TextDecoration.lineThrough:TextDecoration.none,
+                                    decorationColor: task.isDone?Colors.grey:null,
                                   ),
                                 ),
                                 Checkbox(

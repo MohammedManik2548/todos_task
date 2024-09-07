@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,
       initialBinding: GeneralBindings(),
-      initialRoute: RouteStrings.tasks,
+      initialRoute: RouteStrings.login,
       getPages: AppRoutes.pages,
     );
   }

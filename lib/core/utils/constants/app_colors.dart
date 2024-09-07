@@ -6,15 +6,6 @@ class AppColors {
   static const Color secondary = Color(0xFFFFFFFF);
   static const Color accent = Color(0xFFFF679B);
 
-  /// Gradiant Colors
-  static const linearGradiant = LinearGradient(
-    begin: Alignment.topLeft,
-    end: Alignment.bottomRight,
-    colors: [
-      Color(0xFFF2709C),
-      Color(0xFFFF9472),
-    ],
-  );
 
   /// Divider colors
   static const Color dividerLight = Color(0xFFD8D8D8);

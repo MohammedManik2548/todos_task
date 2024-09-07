@@ -22,7 +22,7 @@ To get started with the Todos Flutter Application, follow these steps:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/alamin-karno/dokan
+   git clone https://github.com/MohammedManik2548/todos_task
    ```
 2. **Navigate to the project directory**:
    ```bash
