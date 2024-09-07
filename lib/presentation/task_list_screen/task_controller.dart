@@ -17,6 +17,12 @@ class TaskController extends GetxController {
     initDatabase();
     await NotifyHelper.init();
     tz.initializeTimeZones();
+    DateTime selectedTime = DateTime.now().add(const Duration(minutes: 10));
+    NotifyHelper.scheduledNotification(
+      'Schedule Notification',
+      'This is Schedule Notification',
+      selectedTime,
+    );
   }
 
   void initDatabase() async {
