@@ -48,7 +48,7 @@ Once the application is running, you can explore the following functionalities:
 
 ## Screenshots
 
-Here are some screenshots of the Dokan Flutter Application:
+Here are some screenshots of the Todos_task Flutter Application:
 
 |                                                Login Screen                                                |                                                    Todos Screen                                                     |                                                     Add Todos Screen                                                      |
 |:----------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------:|
